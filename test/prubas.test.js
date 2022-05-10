@@ -5,7 +5,6 @@ import {describe,it,except} from "jest";
 const testBoard = new Board();
 const testRound = new Round()
 
-
 describe('Pruebas de clase Round',()=>{
 
 it('......',()=>{

@@ -1,3 +1,5 @@
+import Round from "./Round";
+
 export default class Board {
   constructor() {
     this.gameBoard = new Array(10);
@@ -10,7 +12,8 @@ export default class Board {
 
   game(){
     for(let i=0; i < this.gameBoard.length(); i += 1){
-      
+      const round = new Round();
+      this.gameBoard.push(round)
     }
   }
 }
