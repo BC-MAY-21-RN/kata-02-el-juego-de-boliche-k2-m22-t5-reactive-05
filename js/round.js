@@ -45,26 +45,3 @@ class Round {
 }
 
 module.exports = Round;
-
-/**
- * 
- * primer ronda
- *  3
- *  7
- *  / 18
- * segundo ronda
- *  8
- *  2
- *  / 12
- * tercera ronda
- * 2
- * 4
- * 6
- * cuarta ronda
- *  10
- *  - 
- *  X 18
- * quinta ronda
- * 5
- * 3
- */
