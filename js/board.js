@@ -1,9 +1,9 @@
-const Round = require("../js/round.js");
+const Round = require('./round');
 
 class Board {
   constructor() {
-    this.gameBoard = new Array();
-    this.totalScore = new Array();
+    this.gameBoard = [];
+    this.totalScore = [];
     this.extraPointTenth = 0;
   }
 
@@ -38,33 +38,21 @@ class Board {
   }
 
   printBoard() {
-    let cadena = "";
+    let cadena = '';
     for (let i = 0; i < 10; i += 1) {
       const ronda = this.gameBoard[i];
-        if(ronda.score<10){
-            cadena +=
-          "| " +
-          ronda.getTiroUno() +
-          " | " +
-          ronda.getTiroDos() +
-          " | ";
-          cadena += this.totalScore[i] +"\n";
-        }else{
-          if(ronda.isSpare()){
-            cadena +=
-          "| " +
-          ronda.getTiroUno() +
-          " | / | "
-          +  this.totalScore[i] + "\n";
-          }
-          if(ronda.isStrike()){
-            cadena +=
-            "|   | X | "
-            +  this.totalScore[i] + "\n";
-          }
+      if (ronda.score < 10) {
+        cadena += `|  ${ronda.getTiroUno()} | ${ronda.getTiroDos()}  | ${this.totalScore[i]}  \n`;
+      } else {
+        if (ronda.isSpare()) {
+          cadena += `|  ${ronda.getTiroUno()} | /  | ${this.totalScore[i]}  \n`;
         }
+        if (ronda.isStrike()) {
+          cadena += `|    | X  | ${this.totalScore[i]}  \n`;
+        }
+      }
     }
-    console.log(cadena);
+    return cadena;
   }
 }
 

@@ -14,16 +14,17 @@ class Round {
   }
 
   isSpare() {
-    if(this.tiroUno === 10){
-        return false;
+    if (this.tiroUno === 10) {
+      return false;
     }
-    return this.tiroUno + this.tiroDos ===10;
+    return this.tiroUno + this.tiroDos === 10;
   }
 
   isStrike() {
     return this.tiroUno === 10;
   }
 
+  // eslint-disable-next-line class-methods-use-this
   getRound1() {
     return Math.floor(Math.random() * 11);
   }
@@ -39,8 +40,8 @@ class Round {
     this.score = this.tiroUno + this.tiroDos;
   }
 
-  setScore(nextRoundScore){
-      this.score += nextRoundScore;
+  setScore(nextRoundScore) {
+    this.score += nextRoundScore;
   }
 }
 

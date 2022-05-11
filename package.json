@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/BC-MAY-21-RN/kata-02-el-juego-de-boliche-k2-m22-t5-reactive-05#readme",
   "devDependencies": {
+    "eslint": "^8.15.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "jest": "^28.1.0"
