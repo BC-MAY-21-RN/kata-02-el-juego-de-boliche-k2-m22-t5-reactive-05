@@ -1,4 +1,5 @@
 ![BrightCoders Logo](img/logo-bc.png)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6a3007f867626a2c8675/maintainability)](https://codeclimate.com/github/BC-MAY-21-RN/kata-02-el-juego-de-boliche-k2-m22-t5-reactive-05/maintainability)
 
 # Kata El Juego de Boliche
 ![cover](img/cover.jpg)
